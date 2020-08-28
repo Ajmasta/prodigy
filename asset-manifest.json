@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/prodigy/static/css/main.aeede71a.chunk.css",
-    "main.js": "/prodigy/static/js/main.8308f9c1.chunk.js",
+    "main.js": "/prodigy/static/js/main.9fbb7546.chunk.js",
     "runtime-main.js": "/prodigy/static/js/runtime-main.8870fccc.js",
     "static/css/2.21a773b6.chunk.css": "/prodigy/static/css/2.21a773b6.chunk.css",
-    "static/js/2.3222eb27.chunk.js": "/prodigy/static/js/2.3222eb27.chunk.js",
+    "static/js/2.1de962a6.chunk.js": "/prodigy/static/js/2.1de962a6.chunk.js",
     "index.html": "/prodigy/index.html",
-    "precache-manifest.2927ad758abf5bbe9a5a423ffd6e4e5d.js": "/prodigy/precache-manifest.2927ad758abf5bbe9a5a423ffd6e4e5d.js",
+    "precache-manifest.b205c64161d98fe350a3259525612a2d.js": "/prodigy/precache-manifest.b205c64161d98fe350a3259525612a2d.js",
     "service-worker.js": "/prodigy/service-worker.js",
-    "static/js/2.3222eb27.chunk.js.LICENSE.txt": "/prodigy/static/js/2.3222eb27.chunk.js.LICENSE.txt",
+    "static/js/2.1de962a6.chunk.js.LICENSE.txt": "/prodigy/static/js/2.1de962a6.chunk.js.LICENSE.txt",
     "static/media/1.jpg": "/prodigy/static/media/1.04809c38.jpg",
     "static/media/10.jpg": "/prodigy/static/media/10.011e848f.jpg",
     "static/media/11.jpg": "/prodigy/static/media/11.a7b6040e.jpg",
@@ -43,8 +43,8 @@
   "entrypoints": [
     "static/js/runtime-main.8870fccc.js",
     "static/css/2.21a773b6.chunk.css",
-    "static/js/2.3222eb27.chunk.js",
+    "static/js/2.1de962a6.chunk.js",
     "static/css/main.aeede71a.chunk.css",
-    "static/js/main.8308f9c1.chunk.js"
+    "static/js/main.9fbb7546.chunk.js"
   ]
 }
