@@ -1,0 +1,618 @@
+.App {
+  text-align: center;
+  min-width: 100%;
+  min-height: 100%;
+}
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+div {
+  max-width: 100%;
+}
+.body {
+  display: flex;
+  justify-content: center;
+  min-width: 100%;
+  min-height: 100%;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  background-color: inherit;
+}
+a:visited {
+  text-decoration: none;
+  color: inherit;
+  background-color: inherit;
+}
+#cdIcon {
+  width: 50px;
+  z-index: 3000;
+  transition: all 1s ease;
+  margin-right: 0px;
+  height: 100%;
+}
+#pauseIcon {
+  width: 50px;
+  z-index: 3000;
+  transition: all 1s ease;
+  margin-right: 0px;
+  height: 100%;
+}
+.clickedIcon {
+  flex: 1 !important;
+}
+
+#TitleName {
+  flex: 1;
+  overflow-x: auto;
+  font-size: medium;
+}
+
+@keyframes slidein {
+  from {
+    transform: translateX(0%);
+  }
+
+  to {
+    transform: translateX(100%);
+  }
+}
+@font-face {
+  font-family: "digital-clock-font";
+  src: url("./fonts/digital-7.ttf");
+}
+@font-face {
+  font-family: "graffiti";
+  src: url("./fonts/SpriteGraffiti-Regular.ttf");
+}
+@font-face {
+  font-family: "dragonball-font";
+  src: url("./fonts/Saiyan-Sans.ttf");
+}
+@font-face {
+  font-family: "proxima-nova";
+  src: url("./fonts/ProximaNova-Regular.otf");
+}
+@font-face {
+  font-family: "number-font";
+  src: url("./fonts/NoneShallPass-B598.ttf");
+}
+@font-face {
+  font-family: "loading-font";
+  src: url("./fonts/Super\ Webcomic\ Bros..ttf");
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+.tracklist-items {
+  justify-content: left;
+  align-content: left;
+  display: flex;
+
+  flex-direction: row;
+  font-family: proxima-nova;
+  margin-bottom: auto;
+}
+.tracklistText {
+  width: 70%;
+
+  overflow-x: scroll;
+  margin-right: 15px;
+  margin-top: auto;
+  margin-bottom: auto;
+  text-align: left;
+  padding-left: 20px;
+}
+.playArrowTracklist {
+  margin: auto;
+  height: 24px;
+  color: white !important;
+}
+.playButtonText2 {
+  margin: auto;
+}
+
+.MuiTypography-displayBlock {
+  min-width: 256px;
+  width: 100%;
+  height: 100%;
+  align-self: center;
+  padding-top: 10px;
+}
+.tracklist-items:nth-child(even) {
+  background-color: #575663;
+  transition: background-color 0.4s ease;
+  border-bottom: #121858 1px solid;
+  color: white;
+}
+.tracklist-items:nth-child(odd) {
+  background-color: #121858;
+  transition: background-color 0.4s ease;
+  color: white;
+  border-bottom: #121858 1px solid;
+}
+.tracklist-items:nth-child(even):hover {
+  background-color: #1976d2;
+}
+
+.tracklist-items:nth-child(odd):hover {
+  background-color: #1976d2;
+}
+.react-jinke-music-player-main.light-theme,
+.react-jinke-music-player-mobile {
+  background-color: rgba(250, 250, 250, 0.9) !important;
+  z-index: 1000;
+}
+#tracklist {
+  border-radius: 20%;
+  justify-items: center;
+  align-content: center;
+  justify-self: center;
+}
+@media (min-width: 768px) {
+  .toolBar {
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    top: 0;
+    min-width: 100%;
+    box-sizing: content-box;
+    padding: 0;
+    height: 50px;
+    background-color: #0d47a1;
+    border-bottom: #121858 8px solid;
+  }
+}
+@media (max-width: 768px) {
+  .toolBar {
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: 0;
+    min-width: 100%;
+    box-sizing: content-box;
+    padding: 0;
+    height: 50px;
+    background-color: #0d47a1;
+    border-bottom: #121858 8px solid;
+    z-index: 0;
+  }
+}
+.cover {
+  height: 100%;
+}
+#music-player-controller {
+  background-size: 100% 100%;
+}
+
+.img-content,
+.img-rotate,
+.img-rotate-pause {
+  background-size: 100% 100% !important;
+  background-repeat: repeat;
+}
+.MuiToolbar-gutters {
+  padding: 0 !important;
+}
+.MuiToolbar-root {
+  padding: 0 !important;
+}
+.MuiToolbar-regular {
+  padding: 0 !important;
+}
+
+#myAudio {
+  width: 20px;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.makeStyles-heroContent-2 {
+  background-color: transparent !important;
+}
+#clockdiv {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+  background-color: transparent;
+}
+#myVideo {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#videoContainer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -100;
+}
+#title {
+  font-family: graffiti;
+  color: #0d47a1;
+  font-size: 5rem;
+  margin: 0px;
+  max-width: 100%;
+  text-shadow: 2px 2px #121858;
+  margin-top: 80px;
+}
+#subtitle {
+  margin-top: 50px;
+  margin-bottom: 0px;
+  font-family: graffiti;
+  color: red;
+  font-size: 7rem;
+  text-shadow: 2px 2px #121858;
+}
+.days,
+.hours,
+.minutes,
+.seconds {
+  margin-top: 10%;
+  text-align: center;
+  display: inline-block;
+  min-width: 105px;
+  max-width: 110px;
+  padding: 2rem;
+  background-color: #0d47a1;
+  border: #121858 solid 3px;
+  color: white;
+  font-size: 2rem;
+  font-family: digital-clock-font;
+  box-shadow: 3px 5px 5px black;
+  border-radius: 15%;
+}
+.MuiToolbar-root {
+  background-color: #0d47a1;
+}
+
+#getNotified {
+  background-color: #0d47a1;
+}
+#App {
+  min-width: 500px;
+  min-height: 500px;
+}
+.login1 {
+  background-color: black;
+  width: 100%;
+  min-width: 100%;
+  height: 50%;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+@media (min-width: 650px) {
+  .loginBody {
+    height: 650px;
+    max-height: 650px;
+  }
+  .loginPage {
+    display: inline-block;
+    width: 100%;
+    height: 650px;
+    max-height: 650px;
+    max-width: 650px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url("backgroundLogin.png") no-repeat center center fixed;
+    background-size: contain;
+  }
+}
+
+.loginPage {
+  display: inline-block;
+  min-height: 100%;
+  min-width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url("backgroundLogin.png") no-repeat center center fixed;
+  background-size: contain;
+  object-fit: contain;
+}
+.login2 {
+  background-color: black;
+  width: 100%;
+  height: 50%;
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: height 4s ease;
+}
+#loadingIcon {
+  margin-top: 0;
+  transition: all 3s ease;
+}
+.loginInfos {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  min-width: 100%;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  margin: auto;
+  z-index: 3000;
+}
+#passwordInput {
+  width: 150px;
+  border: none;
+  margin: auto;
+  margin-right: 20px;
+}
+#loginIcon {
+  background-color: white;
+  width: 50px;
+  border: none;
+  margin: auto;
+  margin-left: 20px;
+  z-index: 3000;
+  justify-self: center;
+}
+
+@keyframes slidedown {
+  from {
+    transform: translateY(0%);
+  }
+  to {
+    transform: translateY(100%);
+  }
+}
+@keyframes slideup {
+  from {
+    transform: translateY(0%);
+  }
+  to {
+    transform: translateY(-100%);
+  }
+}
+.slideDown {
+  height: 0%;
+  position: absolute;
+  bottom: 0;
+}
+.slideUp {
+  animation: slideup 4s forwards;
+}
+.jss2 {
+  background-color: transparent;
+}
+@keyframes slideup2 {
+  0% {
+    transform: translateY(700px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+@keyframes slidedown2 {
+  0% {
+    transform: translateY(-300px);
+  }
+  50% {
+    transform: translateY(-300px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+#loginYearOne {
+  animation: slidedown2 6s;
+  font-family: number-font;
+  color: black;
+  font-size: 4rem;
+  margin-bottom: 0px;
+  margin-top: 10px;
+}
+#loginBody {
+  overflow: hidden;
+  min-height: 100%;
+  max-height: 100%;
+  min-width: 100%;
+}
+#loginTitleOne {
+  margin-top: 1%;
+  font-family: dragonball-font;
+  color: #fbe32c;
+  -webkit-text-stroke: 1px black;
+  font-size: 4rem;
+  margin-bottom: 5%;
+  animation: slideup2 4s;
+}
+.hidden {
+  display: none !important;
+}
+.hiddenIcon {
+  display: none !important;
+}
+#loginYearTwo {
+  animation: slideup2 4s;
+  margin-top: 0;
+  font-family: number-font;
+  font-size: 4rem;
+  margin-bottom: 10px;
+}
+.loading-dots {
+  text-align: center;
+  z-index: 5;
+  font-size: 1rem;
+  height: 50px;
+}
+#loadingText {
+  font-size: 1rem;
+  font-family: loading-font;
+}
+.dot {
+  display: inline;
+  margin-left: 0.2em;
+  margin-right: 0.2em;
+  position: relative;
+  top: -1em;
+  font-size: 3.5em;
+  opacity: 0;
+  animation: showHideDot 2.5s ease-in-out infinite;
+}
+.one {
+  animation-delay: 0.2s;
+}
+.two {
+  animation-delay: 0.4s;
+}
+.three {
+  animation-delay: 0.6s;
+}
+
+@keyframes showHideDot {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+#albumHTML {
+  overflow-x: scroll;
+  box-sizing: content-box;
+  border-radius: 10%;
+  padding-top: 30px;
+  margin-bottom: 150px;
+}
+@media (hover: none) and (pointer: coarse) {
+  #albumHTML::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+  }
+}
+#albumHTML::-webkit-scrollbar {
+  margin-top: 10px;
+  width: 8px;
+  height: 10px;
+}
+
+#albumHTML::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background: linear-gradient(#121858, #121858);
+}
+
+#albumHTML::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+  background-color: white;
+}
+.albumContainer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+}
+.albumCard {
+  min-width: 150px;
+  background-color: #0d47a1;
+  color: white;
+  font-size: 0.67rem;
+  min-height: 200px;
+  max-height: 250px;
+  padding: 24px;
+  box-shadow: -1.5rem 2rem 3rem black;
+  margin: 0;
+  border-radius: 15px;
+  transition: all 0.2s ease;
+  overflow-x: auto !important;
+  display: flex;
+  flex-direction: column;
+  border: 1px black solid;
+  font-family: proxima-nova;
+}
+
+.photoTracks {
+  max-height: 130px;
+  border: 2px solid black;
+}
+@media (max-width: 1200px) {
+  .albumCard {
+    min-width: 150px;
+    height: 250px;
+  }
+}
+.albumCard:hover {
+  transform: translateY(-8%);
+}
+.albumCard:not(:first-child):hover {
+  margin-left: -5px;
+}
+.albumCard:hover ~ .albumCard {
+  transform: translateX(0);
+}
+::-webkit-scrollbar {
+  width: 0px;
+}
+.playIconTracks {
+  margin: auto;
+  width: 30px;
+  color: white !important;
+}
+.selectedIcon {
+  background-color: grey !important;
+}
+
+.trackIconList {
+  margin-bottom: 20px !important;
+}
+
+.playButtonText {
+  font-size: 0.9rem;
+}
+
+.react-jinke-music-player-mobile-header-title {
+  font-family: proxima-nova !important;
+  font-weight: 700;
+  font-size: 2rem !important;
+}
+.react-jinke-music-player-mobile-singer-name {
+  font-family: proxima-nova !important;
+  font-weight: 700;
+}
