@@ -1,12 +1,12 @@
 {
   "files": {
     "main.css": "/prodigy/static/css/main.457d5fd5.chunk.css",
-    "main.js": "/prodigy/static/js/main.f96d9093.chunk.js",
+    "main.js": "/prodigy/static/js/main.af9765c7.chunk.js",
     "runtime-main.js": "/prodigy/static/js/runtime-main.8870fccc.js",
     "static/css/2.21a773b6.chunk.css": "/prodigy/static/css/2.21a773b6.chunk.css",
     "static/js/2.b2394d3f.chunk.js": "/prodigy/static/js/2.b2394d3f.chunk.js",
     "index.html": "/prodigy/index.html",
-    "precache-manifest.2b56566f520059708fb266dbea80e9a2.js": "/prodigy/precache-manifest.2b56566f520059708fb266dbea80e9a2.js",
+    "precache-manifest.1d8eccd9b445f563b7af78d53d40018c.js": "/prodigy/precache-manifest.1d8eccd9b445f563b7af78d53d40018c.js",
     "service-worker.js": "/prodigy/service-worker.js",
     "static/js/2.b2394d3f.chunk.js.LICENSE.txt": "/prodigy/static/js/2.b2394d3f.chunk.js.LICENSE.txt",
     "static/media/1.jpg": "/prodigy/static/media/1.04809c38.jpg",
@@ -25,26 +25,26 @@
     "static/media/9.jpg": "/prodigy/static/media/9.568bb2e9.jpg",
     "static/media/App.css": "/prodigy/static/media/digital-7.1e670d88.ttf",
     "static/media/background.mp4": "/prodigy/static/media/background.6077f78c.mp4",
-    "static/media/music1.mp3": "/prodigy/static/media/music1.59604ec6.mp3",
-    "static/media/music10.mp3": "/prodigy/static/media/music10.06552745.mp3",
-    "static/media/music11.mp3": "/prodigy/static/media/music11.06552745.mp3",
-    "static/media/music12.mp3": "/prodigy/static/media/music12.06552745.mp3",
-    "static/media/music13.mp3": "/prodigy/static/media/music13.06552745.mp3",
-    "static/media/music14.mp3": "/prodigy/static/media/music14.06552745.mp3",
-    "static/media/music2.mp3": "/prodigy/static/media/music2.06552745.mp3",
-    "static/media/music3.mp3": "/prodigy/static/media/music3.c4b48484.mp3",
-    "static/media/music4.mp3": "/prodigy/static/media/music4.06552745.mp3",
-    "static/media/music5.mp3": "/prodigy/static/media/music5.06552745.mp3",
-    "static/media/music6.mp3": "/prodigy/static/media/music6.06552745.mp3",
-    "static/media/music7.mp3": "/prodigy/static/media/music7.06552745.mp3",
-    "static/media/music8.mp3": "/prodigy/static/media/music8.06552745.mp3",
-    "static/media/music9.mp3": "/prodigy/static/media/music9.06552745.mp3"
+    "static/media/music1.mp3": "/prodigy/static/media/music1.bafa7b35.mp3",
+    "static/media/music10.mp3": "/prodigy/static/media/music10.c8d6596f.mp3",
+    "static/media/music11.mp3": "/prodigy/static/media/music11.97269a06.mp3",
+    "static/media/music12.mp3": "/prodigy/static/media/music12.b3dd3cdf.mp3",
+    "static/media/music13.mp3": "/prodigy/static/media/music13.c75a1945.mp3",
+    "static/media/music14.mp3": "/prodigy/static/media/music14.2ebfaf27.mp3",
+    "static/media/music2.mp3": "/prodigy/static/media/music2.372bb4a6.mp3",
+    "static/media/music3.mp3": "/prodigy/static/media/music3.a63da20e.mp3",
+    "static/media/music4.mp3": "/prodigy/static/media/music4.0e726c45.mp3",
+    "static/media/music5.mp3": "/prodigy/static/media/music5.051f35c9.mp3",
+    "static/media/music6.mp3": "/prodigy/static/media/music6.c3f74df7.mp3",
+    "static/media/music7.mp3": "/prodigy/static/media/music7.3b2e029e.mp3",
+    "static/media/music8.mp3": "/prodigy/static/media/music8.962ca804.mp3",
+    "static/media/music9.mp3": "/prodigy/static/media/music9.a9ccf2c4.mp3"
   },
   "entrypoints": [
     "static/js/runtime-main.8870fccc.js",
     "static/css/2.21a773b6.chunk.css",
     "static/js/2.b2394d3f.chunk.js",
     "static/css/main.457d5fd5.chunk.css",
-    "static/js/main.f96d9093.chunk.js"
+    "static/js/main.af9765c7.chunk.js"
   ]
 }
